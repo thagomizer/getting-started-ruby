@@ -13,6 +13,7 @@ topic.publish "Ping!"
 subscription = topic.subscription "your-subscription-name"
 
 messages = subscription.pull
+
 messages.each do |message|
   puts message.data
   message.acknowledge!
