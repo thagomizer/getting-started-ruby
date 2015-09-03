@@ -3,7 +3,7 @@
 # [START all]
 require "gcloud"
 
-gcloud = Gcloud.new "my-project-id", "/path/to/keyfile.json"
+gcloud = Gcloud.new "my-project-id"
 pubsub = gcloud.pubsub
 
 topic = pubsub.topic "your-topic-name"

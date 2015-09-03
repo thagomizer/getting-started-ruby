@@ -3,7 +3,7 @@
 # [START all]
 require "gcloud"
 
-gcloud = Gcloud.new "my-project-id", "/path/to/keyfile.json"
+gcloud = Gcloud.new "my-project-id"
 dataset = gcloud.datastore
 
 entity = Gcloud::Datastore::Entity.new
